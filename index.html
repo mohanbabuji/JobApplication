@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Job Application Form</title>
+        <meta charset="utf-8">
+        <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/25a68b7831.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                
+                
+                max-width: 1980px;
+            }
+            body{
+               
+                background: #313131;
+            }
+            .form{
+                background: white;
+                border: 1rem solid #c7b831e8;
+                margin: 5rem auto;
+                /*the auto for the left/right keeps the page centered*/
+                padding: 5rem;
+                max-width: 38rem;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                justify-content: space-between;
+                font-size: 18px;
+
+            }
+            input{
+                padding: 5px;
+            }
+            button{
+                background: #313131da;
+                color: white;
+                margin-left: 80%;
+                width: 100px;
+                border-radius: 5px;
+                border: none;
+                padding: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+            label{
+                margin-bottom: 11px;
+            }
+            button:hover{
+                background:#c7b831 ;
+                color: #313131;
+            }
+            .required{
+                color: red;
+            }
+            #RNCbox{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            footer{
+                color: slategray;
+                text-align: center;
+                font-size: 14px;
+                opacity: 70%;
+                
+            }
+        </style>
+        <body>
+            <!-- heading of the form -->
+            <div class="form" >
+                    <div class="title" style="text-align: center; font-size: 40px;">
+                        <i class="fas fa-suitcase" style=" color: #313131; background:#c7b831cb;  border-radius: 50%; padding: 5%;"></i><p id="title"style=" color: #313131;"> Job Application</p>
+                    </div>
+                    
+                    <form action="#" method="POST" enctype="multipart/form-data">
+                        <label for="name">Name <span class="required">*</span></label>
+                        <input type="text" name="name" placeholder="Enter Name" required><br>
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" name="email" placeholder="Enter email" required><br>
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" name="pass" placeholder="Enter your password" required><br>
+                        <label for="gender">Gender <span class="required">*</span></label>
+                        <div id="RNCbox"> 
+                          <input type="radio" id="M" name="gen" value="Male">
+                          <label for="M">Male</label><br>
+                          <input type="radio" id="F" name="gen" value="Female">
+                          <label for="F">Female</label><br>
+                          <input type="radio" id="O" name="gen" value="Other">
+                          <label for="O">Others</label><br>
+                        </div>
+                        <label for="address" style="margin-top: -1%;">Address</label>
+                        <input type="text" name="address" placeholder="Enter your address" required><br>
+                        <label for="phone"  >Phone<span class="required">*</span></label>
+                        <input type="tel" name="phn" placeholder="Enter Phone Number"  required><br>
+                        <label for="skills"  >Skills<span class="required">*</span></label>
+                        <div id="RNCbox"> 
+                            <input type="checkbox" name="html" >HTML<br>
+                            <input type="checkbox" name="css" >CSS<br>
+                            <input type="checkbox" name="js" >JS<br>
+                            <input type="checkbox" name="mysql" >MySQL<br>
+                            <input type="checkbox" name="ajax" >AJAX<br>
+                            <input type="checkbox" name="php" >PHP<br>
+                        </div>
+                        <label for="upload" style="margin-top: 3%;">Work Location <span class="required">*</span></label>
+                        <select name="place">
+                            <option value="#">Choose desired work location</option>
+                            <option value="anywhere">Anywhere</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="coimbatore">Coimbatore</option>
+                            <option value="newdelhi">New Delhi</option>
+                            <option value="gurgaon">Gurgaon</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="kolkata">Kolkata</option>
+                        </select>
+                        <label for="upload" style="margin-top: 3%;">Upload CV <span class="required">*</span></label>
+                        <input type="file" name="file" required>
+                        <button type="submit">Submit</button>
+                    
+                    </form>
+            </div>
+            <footer>
+                 Job Application Form Learnovate Ecommerce by zymuz_hinch | ©2021 All Rights Reserved
+            </footer>
+        </body>
+    </head>
+</html>
