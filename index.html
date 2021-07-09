@@ -21,7 +21,7 @@
                 border: 1rem solid #c7b831e8;
                 margin: 5rem auto;
                 /*the auto for the left/right keeps the page centered*/
-                padding: 5rem;
+                padding: 2.2rem;
                 max-width: 38rem;
             }
             form{
@@ -38,7 +38,8 @@
             button{
                 background: #313131da;
                 color: white;
-                margin-left: 80%;
+                margin-top: 2%;
+                margin-left: 70%;
                 width: 100px;
                 border-radius: 5px;
                 border: none;
@@ -60,6 +61,7 @@
             #RNCbox{
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 
             }
             footer{
@@ -106,7 +108,7 @@
                             <input type="checkbox" name="ajax" >AJAX<br>
                             <input type="checkbox" name="php" >PHP<br>
                         </div>
-                        <label for="upload" style="margin-top: 3%;">Work Location <span class="required">*</span></label>
+                        <label for="upload" style="margin-top: 4%;">Work Location <span class="required">*</span></label>
                         <select name="place">
                             <option value="#">Choose desired work location</option>
                             <option value="anywhere">Anywhere</option>
@@ -118,7 +120,7 @@
                             <option value="mumbai">Mumbai</option>
                             <option value="kolkata">Kolkata</option>
                         </select>
-                        <label for="upload" style="margin-top: 3%;">Upload CV <span class="required">*</span></label>
+                        <label for="upload" style="margin-top: 4%;">Upload CV <span class="required">*</span></label>
                         <input type="file" name="file" required>
                         <button type="submit">Submit</button>
                     
